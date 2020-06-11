@@ -7,6 +7,6 @@ echo "Server = http://archlinux.mirror.colo-serv.net/\$repo/os/\$arch" | sudo te
 sudo pacman -Syu --noconfirm
 
 # start distcc
-export DISTCC_DIR=/tmp/distcc
-sudo -E /usr/bin/runuser -u nobody -- /usr/bin/distccd --no-detach --daemon $DISTCC_ARGS
+sudo update-distcc-symlinks
+sudo /usr/bin/runuser -u nobody -- /usr/bin/distccd --no-detach --daemon $DISTCC_ARGS
 
