@@ -1,4 +1,4 @@
-FROM justkdng/arch-chromium-build:latest
+FROM justkdng/arch-build-chromium:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
